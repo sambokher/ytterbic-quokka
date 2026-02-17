@@ -43,7 +43,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
+      padding: 3rem 2rem;
       position: relative;
     }
 
@@ -122,6 +122,34 @@
       color: var(--cream);
     }
 
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      gap: 2rem;
+      max-width: 36rem;
+      margin: 3rem auto 0;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--warm);
+    }
+
+    .highlight {
+      text-align: center;
+    }
+
+    .highlight-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.25rem;
+    }
+
+    .highlight-desc {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
     .footer {
       position: absolute;
       bottom: 2rem;
@@ -151,6 +179,20 @@
       <p class="tagline">Simple, refined, and quietly distinctive</p>
       <p class="description">A minimal space for thoughtful work. Crafted with care and attention to detail.</p>
       <a href="#" class="cta">Coming soon</a>
+      <div class="highlights">
+        <div class="highlight">
+          <p class="highlight-title">Thoughtful</p>
+          <p class="highlight-desc">Every detail considered</p>
+        </div>
+        <div class="highlight">
+          <p class="highlight-title">Minimal</p>
+          <p class="highlight-desc">Nothing unnecessary</p>
+        </div>
+        <div class="highlight">
+          <p class="highlight-title">Refined</p>
+          <p class="highlight-desc">Quality over quantity</p>
+        </div>
+      </div>
     </div>
     <footer class="footer">Est. 2025</footer>
   </main>
